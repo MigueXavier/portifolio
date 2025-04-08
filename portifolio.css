@@ -1,0 +1,85 @@
+body{ background-color: #C2B47F;}
+
+div {
+    border: solid;
+}
+#div_01 {
+    height: 750px;
+    display: flex;
+    flex-direction:column;
+    background-image:url(Rectangle\ 1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+#caixa_div01 {
+    height: 600px;
+    margin: 60px;
+    width: 450px;
+    background-color: #C2B47F;
+    opacity: 80%;
+    border-radius: 16px;
+    
+    
+}
+#botao_escuro {
+    height: 41px;
+    width: 100px;
+    background-color: #C2B47F;
+    border-radius: 30px;
+    align-self: flex-end;
+   margin-top: 55px;
+   position: absolute;
+   left: 32;
+}
+#text1_div01 {
+    margin: 40px;
+    color: #E6E6E6;
+    font-size: 48px;
+}
+#div_02 {
+    height: 50vh;
+    display: flex;
+   
+    
+}
+#caixa_div02 {
+    display: flex;
+}
+#caixa_div02 > div {
+    width: 99vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#div02_caixaroxa {
+    height: 231px;
+    width: 288px;
+    border-radius: 16px;
+    background-color: #7E508E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#text1_div02 {
+    width: 288px;
+    text-align: justify;
+    color: #E6E6E6;
+}
+#div_03 {
+    height: 30vh;
+    margin-top: 60px;
+}
+#titulo_div03 {
+    text-align: center;
+    color: #E6E6E6;
+    
+}
+#listas_div03 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.6rem;
+    color: #E6E6E6;
+    
+}
