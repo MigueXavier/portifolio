@@ -81,6 +81,7 @@ iv {
     font-size: 1.5rem;
     margin-top: 15px;
     color: #E6E6E6;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #titulo_div03 {
     color: #E6E6E6;
@@ -186,9 +187,10 @@ iv {
 
     transition: transform 0.5s ease-in-out;
     transform: translateX(0);
- 
-    height: 500px;
-    width: 1010px;
+     height: 603px;
+    width: 900px;
+    /*height: 500px;
+    width: 1010px;*/
 }
 
 .container {
@@ -197,8 +199,10 @@ iv {
     box-shadow: 2px 2px 4px black;
 
     border: solid;
-    height: 500px;
-    width: 1000px;
+   /* height: 500px;
+    width: 750px;*/
+    height: 603px;
+    width: 900px;
 }
 
 img {
