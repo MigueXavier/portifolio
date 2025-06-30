@@ -24,20 +24,27 @@ iv {
     
 }
 #text1_div01 {
-    margin: 40px;
+    
+   margin: 50px;
     color: #E6E6E6;
     font-size: 48px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#text2_div01{
+    margin: 50px;
+    color: #E6E6E6;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #div_02 {
     height: 60vh;
     display: flex;
     background-color: #C2B47F;
-    
+    align-self: flex-end;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-#caixa_div02 {
-    display: flex;
-}
-#caixa_div02 > div {
+
+#div_02 > div {
     width: 99vh;
     display: flex;
     align-items: center;
@@ -53,16 +60,18 @@ iv {
     width: 288px;
     border-radius: 16px;
     display: flex;
+
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 #text1_div02 {
-    width: 288px;
+    width: 320px;
     text-align: justify;
     color: #E6E6E6;
 }
 #div_03{
-    height: 40vh;
+    height: 30vh;
     background-color: #C2B47F;
     text-align: center;
 }
@@ -72,6 +81,7 @@ iv {
     font-size: 1.5rem;
     margin-top: 15px;
     color: #E6E6E6;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #titulo_div03 {
     color: #E6E6E6;
@@ -84,17 +94,22 @@ iv {
     width: 100px;
     background-color: #C2B47F;
     border-radius: 30px;
-    position: relative;
-    left: 22cm;
-    top: 1cm;
+
+    margin: 30px;
+
+   
 }
 #bola {
     height: 35px;
     width: 37px;
+    position: absolute;
     background-color: #7E508E;
     border-radius: 30px;
     margin-left: 5px;
     margin-top:2px ;
+    
+    right: 88px;
+    transition: right 0.5s;
 }
 
 #rodape{
@@ -116,10 +131,7 @@ iv {
 #icone_rodape {
     display: flex;
 }
-#carrossel {
-    height: 80vh;
-    background-color: #C2B47F;
-}
+
 #contato {
     height: 60vh;
     background-color: #C2B47F;
@@ -151,12 +163,15 @@ iv {
     align-items:end;
 }
 #botao{
-    position: absolute;
+   position: absolute;
     opacity: 0;
-    width: 100%;
-    height: 100%;
+   width: 100px;
+    height: 40px;
+    cursor: pointer;
 }
 #carrossel {
+    height: 80vh;
+    background-color: #C2B47F;
     overflow: hidden;
     height: 100vh;
     width: 100%;
@@ -172,9 +187,10 @@ iv {
 
     transition: transform 0.5s ease-in-out;
     transform: translateX(0);
- 
-    height: 500px;
-    width: 1010px;
+     height: 603px;
+    width: 900px;
+    /*height: 500px;
+    width: 1010px;*/
 }
 
 .container {
@@ -183,8 +199,10 @@ iv {
     box-shadow: 2px 2px 4px black;
 
     border: solid;
-    height: 500px;
-    width: 1000px;
+   /* height: 500px;
+    width: 750px;*/
+    height: 603px;
+    width: 900px;
 }
 
 img {
@@ -196,6 +214,83 @@ img {
     margin-bottom: 20px;
 }
 
-@media screen and (max-width: 1040px) {
+#raimundo{
+    width: 50%;
     
+    display: flex;
+    flex-direction: row-reverse;
+}
+#rai {
+    width: 50%;
+}
+
+
+
+@media screen and (max-width: 1235px) {
+ 
+    #div_01{
+        background-image: none;
+        background-color: #894FC2;
+    }
+  
+    #caixa_div01 {
+        height: 450px;
+        width: 250px;
+    }
+    #text1_div01 {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 1040px) {
+    #div_02{ flex-direction: column;
+    }
+    #div_02 > div {
+        margin: 20px;
+    }
+    #div_03 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .container {
+        width: 750px;
+    }
+}
+
+
+body.dark  #div_01{ 
+    background-color: black;
+background-image: url(Rectangle\ 18.png);
+@media screen and (max-width: 1235px){
+    background-image: none;
+        background-color: #5b278c;
+}}
+
+body.dark #botao_escuro{
+    background-color: #76705A
+}
+body.dark #caixa_div01 {
+    background-color: #76705A;
+    color: #E6E6E6
+}
+body.dark #bola{
+   
+    position: absolute;
+    right: 35px;
+    
+}
+body.dark #div_02{
+    background-color: #76705A
+}
+body.dark #div_03{
+    background-color: #76705A
+}
+body.dark #carrossel{
+    background-color: #76705A
+}
+body.dark #contato{
+    background-color: #76705A
+}
+body.dark #rodape{
+    background-color: #383423
 }

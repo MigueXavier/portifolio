@@ -12,4 +12,13 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     setInterval(carrossel, 1800);
+
+
+    let botao = document.getElementById('botao');
+
+    botao.addEventListener('change', () => {
+        document.body.classList.toggle('dark', botao.checked);
+    });
+
 });
+
